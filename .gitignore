@@ -9,3 +9,4 @@ ipython_config.py
 .venv/
 .Identifier
 
+ RGB_224x224/
