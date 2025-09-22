@@ -92,22 +92,23 @@ We welcome contributions! If you'd like to help improve this project, please fol
 ### Project Structure
 The project structure is organized as follows:
 ```
-    Quality-air/
-    ├── backend/                  # Contains the Flask API code and ML model
-    │   ├── app.py                # Flask application
-    │   ├── Air_Quality.pkl       # Machine Learning model
-    │   ├── requirements.txt      # Backend dependencies
-    │   └── Dockerfile            # Dockerfile for the backend service
-    ├── frontend/                 # Contains static frontend files and Nginx configuration
-    │   ├── index.html            # Main frontend page
-    │   ├── style.css             # CSS styles
-    │   ├── APP.js                # Frontend JavaScript logic
-    │   ├── img/                  # Folder for static images
-    │   │
-    │   ├── nginx.conf            # Nginx configuration
-    │   └── Dockerfile            # Dockerfile for the frontend service
-    ├── docker-compose.yml        # Docker services orchestration
-    └── README.md 
+    DeepLearning-Image-Classification/
+    ├─deploy/
+    │    ├─app.py
+    │    ├─crop_classifier_model.pkl
+    │    ├─Dockerfile
+    │    └─requirements.txt
+    ├docs/
+    │   ├─output.png
+    │   └─example-usage.gif
+    ├─EDA/
+    │   ├─RGB_224x224 #Data
+    │   └─model_tranining.ipynb
+    ├─.dockerignore
+    ├─.gitignore
+    ├─docker-compose.yml
+    ├─LICENSE
+    └─README.md
 ```
 ## Build and Run with Docker Compose
 
@@ -161,6 +162,7 @@ To stop and remove containers, networks, and images (for a complete cleanup or r
 ## Usage Examples
 The backend exposes a main endpoint for prediction.
 
+![gif](docs/example-usage.gif)
 
 ## See rendered notebook
 1. Url: [Notebook Rendered](https://nbviewer.org./github/Caio-GBrayner/DeepLearning-Image-Classification/blob/main/EDA/model_tranining.ipynb)
